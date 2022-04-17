@@ -2,22 +2,23 @@
 <head>
     <title>TMT PAWS WEB SYSTEM</title>
     <style>
-      body { text-align:center; margin: 0; background-color: rgb(225, 235, 239); }
+      body { text-align:center; margin: 0; background-color: rgb(156, 175, 181); }
       .vert { margin-bottom: 10%; }
       .hori{ margin-bottom: 0%; }
-      .head{background-color: rgb(128, 152, 167);
+      .head{background-color: #25d7f3;
          color: rgb(255, 255, 255);
          font-family: Verdana;
          font-size: 30px;
          font-weight: bolder;
-         height: 12%;
+         height: 10%;
          box-shadow: 0px 5px 20px rgb(71, 110, 122);
-         line-height: 100px;
+         line-height: 200px;
         }
       .bgroup button{
-        background-color: lightslategray;
-        border-radius: 8px;
-        box-shadow: 1px 3px 5px rgb(71, 110, 122);
+        font-size: 50px;
+        background-color: rgb(203, 223, 236);
+        border-radius: 20px;
+        box-shadow: 1px 3px 5px rgb(16, 37, 51);
       }
     </style>
   </head>
@@ -26,16 +27,18 @@
         <h1>TMT PAWS SYSTEM</h1>
     </div>
     <div id="container">
-      <p class="bgroup"; style="background-color: lightslategray;border-radius: 5px; margin: 40px; height: 5%;">
-        <button onclick="takePhoto();">TAKE PHOTO</button>
-        <button onclick="downloadPhoto();">DOWNLOAD PHOTO</button>
-        <button onclick="recordVideo();">RECORD VIDEO</button>
-        <button onclick="recordVideo();">STOP RECORD</button>
-        <button onclick="location.reload();">REFRESH PAGE</button>
-      </p>
-      <h2 style="font-family: verdana; ">CAMERA LOCAL WEB VIEW</h2>
+      <p class="bgroup"; style="background-color: #20b4cb;border-radius: 5px; height: 7%; line-height: 140px;">
+        <button onclick="takePhoto();"><img src="https://media.discordapp.net/attachments/903599229421899821/965201060031524884/cam3.png">Capture</button>
+        <button onclick="downloadPhoto();"><img src="https://media.discordapp.net/attachments/903599229421899821/965216900487450635/download3.png">DL</button>
+        <button onclick="recordVideo();"><img src="https://media.discordapp.net/attachments/903599229421899821/965202688839131166/play1.png">VIDEO</button>
+        <button onclick="stopVideo();"><img src="https://media.discordapp.net/attachments/903599229421899821/965216867247599616/stop2.png">ST</button>
+        <button onclick="location.reload();"><img src="https://media.discordapp.net/attachments/903599229421899821/965201966496116836/cam3.png">RELOAD</button>
+    </p>
     </div>
-    <div><img src="saved-photo" id="photo" width="70%"></div>
+    <div style="background-color: rgb(255, 255, 255); margin: 40px;">
+        <h2 style="font-family: verdana; font-size: 50px; ">CAMERA VIEW</h2>
+        <img src="saved-photo" id="photo" width="70%">
+    </div>
   </body>
   <script>
     var deg = 0;
