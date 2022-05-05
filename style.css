@@ -1,0 +1,52 @@
+
+.head{background-color: #25d7f3;
+    color: rgb(0, 0, 0);
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    box-shadow: 0px 5px 20px rgb(71, 110, 122);
+    height: 80px;
+    padding: 6px 4px;
+    text-align: center;
+}
+.myrow{
+    background-color: #ffffff;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    box-shadow: 0px 5px 20px rgb(71, 110, 122);
+    height: 100%;
+    padding: 20px;
+}
+.inner{
+    background-color: lightblue;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0px 5px 20px rgb(71, 110, 122);
+    height: 580px;
+    padding: 20px;
+
+}
+.imgmain{
+    width: 100%;
+    max-width: 536px;
+    align-items: center;
+}
+.button1{
+    margin-top: 20px;
+    margin-left: 100px;
+    padding : 1rem;
+}
+
+.mbot {
+    margin: 20px;
+}
+
+.text1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
